@@ -1,130 +1,102 @@
-🌐 Multi-Site Enterprise Build (CCNA & L2/L3 Portfolio Project)
+# Multi-Site Enterprise Build
 
-Illustrative topology of HQ + Branches network with VLAN segmentation, inter-VLAN routing, VPN, and automation.
+A comprehensive, modular, and scalable enterprise network and automation project designed to simulate real-world multi-site enterprise infrastructure. This project demonstrates hands-on knowledge in **networking, cloud integration, automation, and enterprise-level best practices**.
 
-🔥 Project Overview
+---
 
-Multi-Site Enterprise Build is a comprehensive networking lab simulating a real-world enterprise network. The project evolves from a basic LAN setup to a multi-site, fully automated, secure network integrating routing, switching, VLANs, IPsec VPNs, and Python-based automation.
+## 🚀 Project Overview
 
-Purpose:
+This project aims to provide a **hands-on blueprint** for building, managing, and automating enterprise networks across multiple sites. It covers core areas including:
 
-Bridge the gap from L1 NOC operations → L2/L3 engineer skills.
+- **Network Design & Implementation**: Routing, switching, VLANs, OSPF, BGP.
+- **Automation & Scripting**: Python automation for repetitive network tasks.
+- **Security & Monitoring**: Basic firewall policies, logs, and network health monitoring.
+- **Documentation & Reporting**: Clear project documentation and visualization of network topology.
+- **Scalable Multi-Site Architecture**: Simulated multi-branch enterprise connectivity for learning real-world deployment.
 
-Apply CCNA concepts in a hands-on, scalable lab environment.
+---
 
-Demonstrate automation, troubleshooting, and documentation skills to potential employers.
+## 🗂️ Folder Structure
 
-
-🗓 Project Phases
-Phase	Timeline	Focus	Outcome
-Phase 1	Oct – Nov 2024	VLANs, STP, Subnetting, Inter-VLAN Routing	Fully segmented LAN, router-on-a-stick, lab-validated IP plan
-Phase 2	Dec 2024 – Jan 2025	OSPF Multi-Area, IPsec VPNs, ACLs, Monitoring, Automation	Site-to-Site connectivity, scripted VLAN/ACL deployment, SNMP/Syslog integration
-Phase 3	Feb – Mar 2025	BGP basics, Cloud Networking, Advanced Automation, Interview Readiness	Multi-site + cloud simulation, full automation suite, troubleshooting scenarios, interview-ready portfolio
-
-
-🛠 Key Technologies
-
-Routing & Switching: Cisco CLI, VLANs, Trunks, STP, EtherChannel, OSPF, BGP (lab)
-
-Security: ACLs, NAT, IPsec Site-to-Site VPN
-
-Automation: Python (Netmiko & Paramiko) for configuration push, backup, and validation scripts
-
-Monitoring: SNMP, Syslog, simulated Splunk integration
-
-Cloud: Basic VPC concepts and site-to-cloud VPN simulation
-
-
-📂 Capstone Project Structure
-Multi-Site-Enterprise-Build/
+multi-site-enterprise-build/
 │
-├─ diagrams/             # Network diagrams & topology images
-├─ configs/              # Device configuration files
-├─ scripts/              # Python automation scripts
-│   ├─ deploy_vlan.py
-│   ├─ backup_configs.py
-│   └─ config_audit.py
-├─ lab_notes/            # Week-by-week lab documentation
-└─ README.md             # Project documentation
+├── docs/                # Project documentation, diagrams, topologies
+├── scripts/             # Automation scripts (Python/Bash)
+├── configs/             # Sample configuration files for routers/switches/firewalls
+├── labs/                # Lab simulation files (GNS3, Packet Tracer)
+├── reports/             # Performance reports and test results
+├── README.md            # Project overview
+└── .gitignore           # Git ignore file
 
 
+💡 Key Features
 
-🚀 How the Project Evolves
-
-Phase 1 – Foundations:
-
-Subnetting and IP addressing planning
-
-VLAN creation & trunk configuration
-
-Inter-VLAN routing using router-on-a-stick
-
-Basic STP configuration and redundancy
+End-to-end multi-site network setup
+Automated network provisioning scripts
+Modular design for easy scalability
+Security monitoring templates
+Clear lab simulations for hands-on practice
+Version-controlled documentation and configs
 
 
-Phase 2 – Intermediate:
+🛠️ Tech Stack & Tools
 
-OSPF multi-area routing
-
-IPsec VPN setup between HQ and branches
-
-ACL configuration and NAT
-
-Python scripts: VLAN automation, config backups
+Networking: Cisco Packet Tracer, GNS3, VLANs, OSPF, BGP
+Scripting & Automation: Python, Bash
+Version Control: Git & GitHub
+Documentation: Markdown, network diagrams
+Monitoring: Basic scripts for logs and alerts
 
 
-Phase 3 – Advanced:
+🎯 Learning Objectives
 
-BGP lab for upstream connectivity
-
-Site-to-cloud VPN simulation (AWS/GCP concepts)
-
-Advanced automation: idempotent config deployment and compliance checks
-
-End-to-end troubleshooting scenarios
+Understand enterprise-grade network design principles.
+Practice L2/L3 switching and routing in multi-site setups.
+Automate repetitive networking tasks using Python scripts.
+Learn to document and maintain network configurations efficiently.
+Explore basic security implementations in multi-site networks.
 
 
+🔧 How to Use This Project
 
-📈 Learning Outcomes
-
-Technical Mastery: VLANs, STP, Inter-VLAN routing, OSPF, ACLs, IPsec VPNs, NAT, basic BGP, Python automation
-
-Automation Proficiency: Scripted configuration deployment, backups, and compliance audits
-
-Operational Credibility: Simulated enterprise network with realistic troubleshooting scenarios
-
-Portfolio-Ready Evidence: Diagrams, configs, scripts, and lab documentation for job interviews
+Clone the repository:
+git clone https://github.com/yourusername/multi-site-enterprise-build.git
+cd multi-site-enterprise-build
 
 
-🎯 How to Run the Project
+Explore Documentation:
+Check the /docs folder for topology diagrams and project blueprints.
 
-Install Cisco Packet Tracer or GNS3.
+Run Automation Scripts:
+Navigate to /scripts and execute scripts as per README instructions inside that folder.
 
-Clone this repository:
-
-git clone https://github.com/<your-username>/Multi-Site-Enterprise-Build.git
-
-Load topologies and follow lab notes for weekly setup.
-
-Run Python automation scripts from scripts/ directory.
+Simulate Network Labs:
+Open /labs in Packet Tracer or GNS3 and follow simulation instructions.
 
 
+📈 Future Enhancements
 
-📖 References & Resources
-
-David Bombal CCNA Lab Exercises
-
-Cisco Packet Tracer
-
-Netmiko GitHub Repository
-
-Cisco DevNet Sandbox
+Integrate cloud-based network services (AWS, Azure, GCP)
+Implement advanced firewall and security policies
+Add CI/CD pipelines for automated network deployment
+Include monitoring dashboards for real-time network health
+Expand labs with more complex multi-site topologies
 
 
-⭐ Contribution
+🤝 Contributing
 
-This project is for personal portfolio purposes. Pull requests or collaborations are welcome if you want to extend lab automation or add new topologies.
+Contributions are welcome!
 
-📝 License
+Fork the repository
+Create a new branch (git checkout -b feature-name)
+Commit your changes (git commit -m 'Add new feature')
+Push to the branch (git push origin feature-name)
+Open a Pull Request
 
-MIT License — Free to use for learning and portfolio showcasing.
+
+📄 License
+This project is MIT Licensed — feel free to use and adapt for learning purposes.
+
+📌 Contact
+For questions or collaborations:
+Your Name – [Email / LinkedIn / GitHub]
