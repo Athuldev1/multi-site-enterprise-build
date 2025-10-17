@@ -1,0 +1,2 @@
+This repository contains the foundational setup for an enterprise-level multi-site architecture project. 
+Future updates will include networking automation, infrastructure blueprints, and deployment guides.
