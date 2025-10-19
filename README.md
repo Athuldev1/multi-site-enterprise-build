@@ -19,13 +19,13 @@ This project provides a **hands-on blueprint** for building, managing, and autom
 ## 🗂️ Folder Structure
 
 multi-site-enterprise-build/
-├── docs/ # Project documentation, diagrams, topologies
-├── scripts/ # Automation scripts (Python/Bash)
-├── configs/ # Sample configuration files for routers/switches/firewalls
-├── labs/ # Lab simulation files (GNS3, Packet Tracer)
-├── reports/ # Performance reports and test results
-├── README.md # Project overview
-└── .gitignore # Git ignore file
+├── docs/
+├── scripts/ 
+├── configs/ 
+├── labs/ 
+├── reports/ 
+├── README.md 
+└── .gitignore
 
 
 ---
