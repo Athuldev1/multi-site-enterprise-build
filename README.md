@@ -77,11 +77,11 @@ cd multi-site-enterprise-build
 
 ## 📈 Future Enhancements
 
-Integrate cloud-based network services (AWS)
-Implement advanced firewall and security policies
-Add CI/CD pipelines for automated network deployment
-Include monitoring dashboards for real-time network health
-Expand labs with more complex multi-site topologies
+1. Integrate cloud-based network services (AWS)
+2. Implement advanced firewall and security policies
+3. Add CI/CD pipelines for automated network deployment
+4. Include monitoring dashboards for real-time network health
+5. Expand labs with more complex multi-site topologies
 
 ## 🤝 Contributing
 
