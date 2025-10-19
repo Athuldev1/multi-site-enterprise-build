@@ -19,6 +19,7 @@ This project provides a **hands-on blueprint** for building, managing, and autom
 ## 🗂️ Folder Structure
 
 multi-site-enterprise-build/
+
 ├── docs/
 
 ├── scripts/ 
