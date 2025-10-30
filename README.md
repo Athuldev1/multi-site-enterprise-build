@@ -1,28 +1,37 @@
-# Multi-Site Enterprise Build (MSEB)
+# Multi-Site Enterprise Build 🚀
 
-## Objective
-Design, configure, and automate a multi-site enterprise network to demonstrate L2/L3 routing, switching, security, and Python automation skills.
+A comprehensive enterprise network lab designed to simulate real-world multi-site infrastructure with routing, switching, security, and automation.
 
-## Tools & Environment
+## 🌐 Topology Overview
+- **Sites:** HQ + 2 Branches
+- **Routing:** OSPF Multi-Area, EIGRP (optional)
+- **Switching:** VLANs, Trunking, STP
+- **Security:** ACLs, DMZ, VPN
+- **Automation:** Python (Netmiko)
+
+## 🧩 Project Phases
+| Phase | Description | Deliverable |
+|-------|--------------|-------------|
+| 1 | Single-Site Build | VLANs, Routing |
+| 2 | Multi-Site Expansion | Static + OSPF |
+| 3 | Enterprise Core | DMZ + NAT |
+| 4 | Automation Layer | Python Scripts |
+| 5 | Cloud/SDN | VPN or Cloud Link |
+
+## 📂 Repository Structure
+See `/configs`, `/automation`, `/diagrams`.
+
+## ⚙️ Tools Used
 - Cisco Packet Tracer / GNS3
-- Cisco IOS (15.x)
-- Python 3.11 + Netmiko
-- OS: Windows 11
-- GitHub for documentation & version control
+- Python 3.10+
+- Netmiko
+- Draw.io for Diagrams
 
-## Project Stages
-1. Single-Site LAN with VLANs
-2. Two-Site Static Routing
-3. Dynamic Routing + Redundancy
-4. Security + Services
-5. Automation (Python + Netmiko)
-6. Enterprise Cloud Integration
+## 📜 License
+MIT License
 
-## Key Deliverables
-- Fully functional lab topology
-- Automation scripts for configuration and verification
-- Design and troubleshooting documentation
-- Final presentation PDF
-
-## Author
-Athulkrishnan KP — Network Engineer | Focus: Routing, Switching, Automation
+---
+### 🧠 Learnings
+- Subnetting, VLAN design, OSPF/EIGRP, ACLs
+- Network automation with Python
+- Documentation discipline via GitHub
