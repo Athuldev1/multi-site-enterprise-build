@@ -1,110 +1,28 @@
-# Multi-Site Enterprise Build
+# Multi-Site Enterprise Build (MSEB)
 
-A comprehensive, modular, and scalable enterprise network and automation project designed to simulate real-world multi-site enterprise infrastructure. This project demonstrates hands-on knowledge in **networking, cloud integration, automation, and enterprise-level best practices**.
+## Objective
+Design, configure, and automate a multi-site enterprise network to demonstrate L2/L3 routing, switching, security, and Python automation skills.
 
----
+## Tools & Environment
+- Cisco Packet Tracer / GNS3
+- Cisco IOS (15.x)
+- Python 3.11 + Netmiko
+- OS: Windows 11
+- GitHub for documentation & version control
 
-## 🚀 Project Overview
+## Project Stages
+1. Single-Site LAN with VLANs
+2. Two-Site Static Routing
+3. Dynamic Routing + Redundancy
+4. Security + Services
+5. Automation (Python + Netmiko)
+6. Enterprise Cloud Integration
 
-This project provides a **hands-on blueprint** for building, managing, and automating enterprise networks across multiple sites. It covers core areas including:
+## Key Deliverables
+- Fully functional lab topology
+- Automation scripts for configuration and verification
+- Design and troubleshooting documentation
+- Final presentation PDF
 
-- **Network Design & Implementation**: Routing, switching, VLANs, OSPF, BGP  
-- **Automation & Scripting**: Python automation for repetitive network tasks  
-- **Security & Monitoring**: Basic firewall policies, logs, and network health monitoring  
-- **Documentation & Reporting**: Clear project documentation and visualization of network topology  
-- **Scalable Multi-Site Architecture**: Simulated multi-branch enterprise connectivity for learning real-world deployment  
-
----
-
-## 🗂️ Folder Structure
-
-multi-site-enterprise-build/
-
-├── docs/
-
-├── scripts/ 
-
-├── configs/ 
-
-├── labs/ 
-
-├── reports/ 
-
-├── README.md 
-
-└── .gitignore
-
-
----
-
-## 💡 Key Features
-
-- End-to-end multi-site network setup  
-- Automated network provisioning scripts  
-- Modular design for easy scalability  
-- Security monitoring templates  
-- Clear lab simulations for hands-on practice  
-- Version-controlled documentation and configs  
-
----
-
-## 🛠️ Tech Stack & Tools
-
-- **Networking**: Cisco Packet Tracer, GNS3, VLANs, OSPF, BGP  
-- **Scripting & Automation**: Python, Bash  
-- **Version Control**: Git & GitHub  
-- **Documentation**: Markdown, network diagrams  
-- **Monitoring**: Basic scripts for logs and alerts  
-
----
-
-## 🎯 Learning Objectives
-
-1. Understand enterprise-grade network design principles  
-2. Practice L2/L3 switching and routing in multi-site setups  
-3. Automate repetitive networking tasks using Python scripts  
-4. Learn to document and maintain network configurations efficiently  
-5. Explore basic security implementations in multi-site networks  
-
----
-
-## 🔧 How to Use This Project
-
-1. **Clone the repository**:
-   
-git clone (https://github.com/Athuldev1/multi-site-enterprise-build.git)
-cd multi-site-enterprise-build
-
-2. **Explore Documentation**: Check the /docs folder for topology diagrams and project blueprints.
-
-3. **Run Automation Scripts**: Navigate to /scripts and execute scripts as per README instructions inside that folder.
-
-4. **Simulate Network Labs**: Open /labs in Packet Tracer or GNS3 and follow simulation instructions.
-
-
-## 📈 Future Enhancements
-
-1. Integrate cloud-based network services (AWS)
-2. Implement advanced firewall and security policies
-3. Add CI/CD pipelines for automated network deployment
-4. Include monitoring dashboards for real-time network health
-5. Expand labs with more complex multi-site topologies
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-Fork the repository
-Create a new branch (git checkout -b feature-name)
-Commit your changes (git commit -m 'Add new feature')
-Push to the branch (git push origin feature-name)
-Open a Pull Request
-
-## 📄 License
-
-This project is MIT Licensed — feel free to use and adapt for learning purposes.
-
-## 📌 Contact
-
-For questions or collaborations:
-Your Name – [Email / LinkedIn / GitHub]
+## Author
+Athulkrishnan KP — Network Engineer | Focus: Routing, Switching, Automation
