@@ -1,0 +1,43 @@
+VLAN 10 – Users
+  Subnet: 192.168.10.0/26
+  Gateway: 192.168.10.1 (R1 G0/0.10)
+  Switch Ports: Fa0/1
+
+VLAN 20 – Servers
+  Subnet: 192.168.10.64/26
+  Gateway: 192.168.10.65 (R1 G0/0.20)
+  Switch Ports: Fa0/2
+
+Router Interface Summary:
+  G0/0.10 – VLAN 10
+  G0/0.20 – VLAN 20
+  Trunk link – S1 Fa0/24 ↔ R1 G0/0
+----------------------------------------------------
+
+switch-1_config:
+
+interface FastEthernet0/1
+ description User_PC1
+ switchport access vlan 10
+ switchport mode access
+
+interface FastEthernet0/2
+ description Server_1
+ switchport access vlan 20
+ switchport mode access
+
+interface FastEthernet0/3
+ switchport access vlan 10
+ switchport mode access
+-----------------------------------------------------
+R1_config:
+
+interface GigabitEthernet0/0.10
+ description Users_VLAN
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.192
+
+interface GigabitEthernet0/0.20
+ description Servers_VLAN
+ encapsulation dot1Q 20
+ ip address 192.168.10.65 255.255.255.192
