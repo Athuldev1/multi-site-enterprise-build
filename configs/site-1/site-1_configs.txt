@@ -11,7 +11,7 @@ VLAN 20 – Servers
 Router Interface Summary:
   G0/0.10 – VLAN 10
   G0/0.20 – VLAN 20
-  Trunk link – S1 Fa0/24 ↔ R1 G0/0
+  Trunk link – S1 G0/1 ↔ R1 G0/0
 ----------------------------------------------------
 
 switch-1_config:
