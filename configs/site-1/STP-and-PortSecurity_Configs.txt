@@ -1,0 +1,78 @@
+🟦 1. STP – Major Configuration Commands to Capture
+🔹 Global STP Mode (Must-have)
+spanning-tree mode rapid-pvst
+
+
+Why:
+Defines convergence behavior and per-VLAN instances. This is a design decision, not a default you want hidden.
+
+🔹 Root Bridge Intent (Even if single switch)
+spanning-tree vlan 10,20,999 priority 24576
+
+
+(or)
+
+spanning-tree vlan 10,20,999 root primary
+
+
+Why:
+This makes root bridge placement explicit.
+Future switches won’t accidentally win root due to a lower MAC.
+
+🔹 Access Port Hardening (STP Safety)
+spanning-tree portfast default
+spanning-tree bpduguard default
+
+
+Why:
+These two lines scream enterprise best practice.
+They prevent accidental loops from user ports.
+
+
+🟦 2. Port Security – Major Commands to Capture
+
+
+🔹 Typical Secure Access Port Template
+interface fastEthernet0/1
+ switchport mode access
+ switchport access vlan 10
+ switchport port-security
+ switchport port-security maximum 2
+ switchport port-security mac-address sticky
+ switchport port-security violation restrict
+
+
+Why each line matters:
+
+port-security → enables feature
+
+maximum 2 → user + phone (realistic)
+
+sticky → auto-learns MACs (less ops pain)
+
+restrict → logs & drops instead of nuking the port
+
+This is very interview-friendly config.
+
+🔹 Optional: Shutdown Mode (More Aggressive)
+switchport port-security violation shutdown
+
+
+Use this only if you want zero tolerance (labs, secure zones).
+
+
+🟦 3. Verification Commands (Document Output, Not Config)
+
+You don’t commit these as config, but you capture outputs in markdown files.
+
+🔹 STP Verification
+show spanning-tree
+show spanning-tree summary
+
+🔹 Port Security Verification
+show port-security
+show port-security interface fastEthernet0/1
+
+
+Why:
+These prove your config is working, not just typed.
