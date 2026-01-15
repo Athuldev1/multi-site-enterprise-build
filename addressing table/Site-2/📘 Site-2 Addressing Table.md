@@ -39,9 +39,11 @@ R1 ↔ R2	10.0.0.0/30	2001:db8:100::/64
 📍 Static Routes on R2
 
 Destination Network	Protocol	Next Hop	      Reason
-192.168.10.0/26	        Static	        10.0.0.1	    Reach Site-1 Users
-192.168.10.64/26	Static	        10.0.0.1	    Reach Site-1 Servers
-2001:db8:10::/64	Static	     2001:db8:100::1	    Reach Site-1 Users (IPv6)
-2001:db8:20::/64	Static	      2001:db8:100::1	    Reach Site-1 Servers (IPv6)
+192.168.10.0/26	   Static	      10.0.0.1	    Reach Site-1 Users
+192.168.10.64/26	Static	      10.0.0.1	    Reach Site-1 Servers
+2001:db8:10::/64	Static	    2001:db8:100::1	    Reach Site-1 Users (IPv6)
+2001:db8:20::/64	Static	     2001:db8:100::1	    Reach Site-1 Servers (IPv6)
 
+Routing Decision Table
+<img width="844" height="476" alt="image" src="https://github.com/user-attachments/assets/d72ef9eb-5d10-4bf5-a201-a7adb43f6f43" />
 
